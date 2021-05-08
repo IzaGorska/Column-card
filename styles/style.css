@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/*
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Big Shoulders Display', cursive; */
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--gray);
+
+}
+
+div.container {
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.container div {
+    color: white;
+    padding: 40px;
+}
+
+div.container div img {
+    width: 50px;
+}
+
+div.container div h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+div.container div p {
+    color: var(--transparent-white);
+    font-size: 0.9em;
+    margin-bottom: 30px;
+    line-height: 1.7em;
+}
+
+div.container div button {
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+
+}
+
+div.sedans {
+    border-radius: 5px 5px 0 0;
+    background-color: var(--orange);
+}
+
+div.suvs {
+    background-color: var(--cyan);
+}
+
+div.luxury {
+    border-radius: 0 0 5px 5px;
+    background-color: var(--dark);
+}
+
+div.sedans button {
+    color: var(--orange);
+}
+
+div.suvs button {
+    color: var(--cyan);
+}
+
+div.luxury button {
+    color: var(--dark);
+}
+
+@media(min-width:960px) {
+    div.container {
+        display: flex;
+        height: 55vh;
+        width: 60vw;
+    }
+
+
+    div.container div button {
+        position: absolute;
+        bottom: 15%;
+    }
+
+    div.sedans {
+        border-radius: 5px 0 0 5px;
+    }
+
+    div.luxury {
+        border-radius: 0 5px 5px 0;
+    }
+}
